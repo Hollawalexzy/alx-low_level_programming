@@ -10,27 +10,23 @@
  */
 int main(void)
 {
-	int n1 = 0, n2;
-	while(n1 <= 9)
+	int digit1, digit2;
+	
+	for (digit1 = 0; digit2 < 9; digit1++)
 	{
-		n2 = 0;
-		while(n2 <= 9)
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 		{
-		if(n1 != n2 $$ n1 < n2)
-		{
-			putchar(n1 + 48);
-			putchar(n2 + 48);
-		
-			if(n1 + n2 != 17)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 == 8 && digit2 == 9)
+			continue;
+			
+			putchar(',');
+			putchar(' ');
 		}
-		++n2;
-		}
-		++n1;;
 	}
 	putchar('\n');
-return: 0;
+
+	return (0);
 }
