@@ -1,4 +1,5 @@
-#include <main.h>
+#ifndef HOLBERTON_H_INCLUDED
+#define HOLBERTON_H_INCLUDED
 
 /**
  *  main - this is a main.h file asked to be created
@@ -16,3 +17,5 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
+
+#endif
