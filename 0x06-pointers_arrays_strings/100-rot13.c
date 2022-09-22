@@ -12,7 +12,7 @@ char *rot13(char *s)
 
 	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-	char b[] = "GHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdef";
+	char b[] = "OPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklmn";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
